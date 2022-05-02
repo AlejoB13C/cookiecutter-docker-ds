@@ -17,12 +17,12 @@ dependencies:
   - pip
   - pyprojroot
   - python-dotenv
-  - click
-  - Sphix
-  - coverage
-  - awscli
-  - flake8
   - python-dotenv
+  - awscli
+  # - click
+  # - Sphix
+  # - coverage
+  # - flake8
 
   {% if cookiecutter.python_version == "auto" -%}
   - python
