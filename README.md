@@ -8,7 +8,7 @@ _A logical, reasonably standardized, but flexible project structure for doing an
 - [Cookiecutter 2.0.2](https://github.com/cookiecutter/cookiecutter)
     Recommended first create a venv to use cookiecutter.
     ```bash
-    wget -P ~/.cookie/ https://github.com/cookiecutter/cookiecutter/archive/refs/tags/2.0.2.tar.gz && cd ~/.cookie/ && tar -xf 2.0.2.tar.gz && pip install -e cookiecutter-2.0.2/
+    wget -P /tmp/cookie/ https://github.com/cookiecutter/cookiecutter/archive/refs/tags/2.0.2.tar.gz && tar -xf /tmp/cookie/2.0.2.tar.gz -C /tmp/cookie/ && pip install -e /tmp/cookie/cookiecutter-2.0.2/ && rm /tmp/cookie/2.0.2.*
     ```
 
 
@@ -43,9 +43,8 @@ _A logical, reasonably standardized, but flexible project structure for doing an
     │   └── raw                 <- The original, immutable data dump.  
     │  
     ├── notebooks               <- Jupyter notebooks. Naming convention is a number (for ordering),  
-    │   │                       the creator's initials, and a short `-` delimited description, e.g.  
-    │   │                       `1.0-jqp-initial-data-exploration`.  
-    │   └── 0.0-{{ cookiecutter.__name_initials  }}-{{ cookiecutter.__project_slug }}.ipynb  
+    │                              the creator's initials, and a short `-` delimited description, e.g.  
+    │                              `1.0-jqp-initial-data-exploration`.  
     │  
     └── {{ cookiecutter.__package_name }}   <- Source code for use in this project.  
         ├── __init__.py         <- Makes {{ cookiecutter.project_module_name }} a Python module.  
