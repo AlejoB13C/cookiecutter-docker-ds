@@ -58,11 +58,37 @@ docs/_build/
 # PyBuilder
 target/
 
-# pyenv python configuration file
-.python-version
+# DotEnv configuration
+.env
+
+# Database
+*.db
+*.rdb
+
+# Pycharm
+.idea
+
+# VS Code
+.vscode/
+
+# Spyder
+.spyproject/
+
+# Jupyter NB Checkpoints
+.ipynb_checkpoints/
 
 # exclude data from source control by default
 /data/
 
-# ipynb checkpoints
-.ipynb_checkpoints
+# Mac OS-specific storage files
+.DS_Store
+
+# vim
+*.swp
+*.swo
+
+# Mypy cache
+.mypy_cache/
+
+# pyenv python configuration file
+.python-version
