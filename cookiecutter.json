@@ -1,0 +1,25 @@
+{
+    "full_name": "Your Name",
+    "email": "Your Email",
+    "github_username": "Your GitHub username",
+
+    "project_name": "Your Project",
+    "__project_slug": "{{ cookiecutter.project_name | slugify }}",
+    "__package_name": "{{ cookiecutter.project_name |lower|replace(' ', '_') }}",
+
+    "project_description": "Do something cool!",
+    "__timestamp": "{{ cookiecutter.timestamp }}",
+
+    "license": ["No license file", "MIT", "BSD-3-Clause"],
+
+    "env_tool": ["conda", "pip"],
+    "project_packages": ["Minimum", "All"],
+    "python_version": "auto",
+
+    "project_version": "0.1.0",
+
+
+    "_copy_without_render": [
+        "*.gitkeep"
+    ]
+}
