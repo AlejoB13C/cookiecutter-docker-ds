@@ -8,7 +8,6 @@
     "__package_name": "{{ cookiecutter.project_name |lower|replace(' ', '_') }}",
 
     "project_description": "Do something cool!",
-    "__timestamp": "{{ cookiecutter.timestamp }}",
 
     "license": ["No license file", "MIT", "BSD-3-Clause"],
 

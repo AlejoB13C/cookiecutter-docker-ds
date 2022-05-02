@@ -20,7 +20,7 @@ _A logical, reasonably standardized, but flexible project structure for doing an
     ├── auto-install.py         <- File to auto set up environment and extensions for this project.  
     ├── tasks.py                <- Invoke with commands like `notebook`.  
     ├── setup.py                <- Makes project pip installable (pip install -e .)  
-    │                               so {{ cookiecutter.project_module_name }} can be imported.  
+    │                               so {{ cookiecutter.__package_name }} can be imported.  
     ├── requirements.txt        <- The requirements file for reproducing the analysis environment using `pip`.  
     ├── environment.yml         <- The requirements file for reproducing the analysis environment using `conda`.  
     │  
@@ -47,7 +47,7 @@ _A logical, reasonably standardized, but flexible project structure for doing an
     │                              `1.0-jqp-initial-data-exploration`.  
     │  
     └── {{ cookiecutter.__package_name }}   <- Source code for use in this project.  
-        ├── __init__.py         <- Makes {{ cookiecutter.project_module_name }} a Python module.  
+        ├── __init__.py         <- Makes {{ cookiecutter.__package_name }} a Python module.  
         │  
         ├── data                <- Scripts to download or generate data.  
         │   └── make_dataset.py  
