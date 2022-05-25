@@ -14,7 +14,7 @@ REMOVE_PATHS = [
     '{% if cookiecutter.project_packages != "All" -%} tasks.py {% endif -%}',
     '{% if cookiecutter.env_tool == "conda" -%} requirements.txt {% endif -%}',
     '{% if cookiecutter.env_tool == "pip" -%} environment.yml {% endif -%}',
-    '{% if cookiecutter.project_open_source_license == "No license file" -%} LICENSE {% endif -%}'
+    '{% if cookiecutter.license == "No license file" -%} LICENSE {% endif -%}'
 ]
 
 for path in REMOVE_PATHS:
